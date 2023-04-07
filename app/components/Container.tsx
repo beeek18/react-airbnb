@@ -2,11 +2,11 @@
 
 import React from "react";
 
-interface ContaiterProps {
+interface ContainerProps {
   children: React.ReactNode;
 }
 
-const Contaiter: React.FC<ContaiterProps> = ({ children }) => {
+const Container: React.FC<ContainerProps> = ({ children }) => {
   return (
     <div
       className="
@@ -23,4 +23,4 @@ const Contaiter: React.FC<ContaiterProps> = ({ children }) => {
   );
 };
 
-export default Contaiter;
+export default Container;
