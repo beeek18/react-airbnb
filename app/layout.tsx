@@ -9,6 +9,7 @@ import RegisterModal from "./components/modals/RegisterModal";
 import LoginModal from "./components/modals/LoginModal";
 import Navbar from "./components/navbar/Navbar";
 import getCurrentUser from "./actions/getCurrentUser";
+import SearchModal from "./components/modals/SearchModal";
 
 export const metadata = {
   title: "React Airbnb",
@@ -31,6 +32,7 @@ export default async function RootLayout({
       <body className={font.className}>
         <ClientOnly>
           <ToasterProvider />
+          <SearchModal />
           <RentModal />
           <RegisterModal />
           <LoginModal />
